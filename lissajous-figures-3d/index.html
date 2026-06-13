@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>3D Лиссажу – Three.js</title>
+    <link rel="stylesheet" href="index.css">
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.128.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.128.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module" src="src/ControlLine.js"></script>
+    <script type="module" src="src/Figure.js"></script>
+    <script type="module" src="src/Point3D.js"></script>
+    <script type="module" src="src/Lissajous3D.js"></script>
+    <script type="module" src="index.js"></script>
+</head>
+
+<body>
+    <div class="info">
+        <strong>3D Фигуры Лиссажу</strong> | Оси: X(красный) Y(зелёный) Z(синий) | Точка и линия обновляются в реальном
+        времени
+    </div>
+    <div class="controls">
+        <div class="control-group">
+            <span>X: A=</span><input type="range" id="ax" min="0" max="1" step="0.01" value="1"> <span
+                id="axVal">1.00</span>
+            <span>f=</span><input type="range" id="fx" min="0.2" max="3" step="0.01" value="1"> <span
+                id="fxVal">1.00</span>
+            <span>φ=</span><input type="range" id="px" min="0" max="6.283" step="0.05" value="0"> <span
+                id="pxVal">0.00</span>
+        </div>
+        <div class="control-group">
+            <span>Y: A=</span><input type="range" id="ay" min="0" max="1" step="0.01" value="1"> <span
+                id="ayVal">1.00</span>
+            <span>f=</span><input type="range" id="fy" min="0.2" max="3" step="0.01" value="1.2"> <span
+                id="fyVal">1.20</span>
+            <span>φ=</span><input type="range" id="py" min="0" max="6.283" step="0.05" value="1.57"> <span
+                id="pyVal">1.57</span>
+        </div>
+        <div class="control-group">
+            <span>Z: A=</span><input type="range" id="az" min="0" max="1" step="0.01" value="0.8"> <span
+                id="azVal">0.80</span>
+            <span>f=</span><input type="range" id="fz" min="0.2" max="3" step="0.01" value="0.7"> <span
+                id="fzVal">0.70</span>
+            <span>φ=</span><input type="range" id="pz" min="0" max="6.283" step="0.05" value="0"> <span
+                id="pzVal">0.00</span>
+        </div>
+        <div class="control-group">
+            <span>Длина следа: </span><input type="range" id="traceLen" min="10" max="500" step="10" value="200"> <span
+                id="lenVal">200</span>
+        </div>
+    </div>
+</body>
+
+</html>

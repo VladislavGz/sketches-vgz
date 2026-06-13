@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="figures/Figures.js"></script>
+    <script src="figures/ControlLine.js"></script>
+    <script src="figures/Figure.js"></script>
+    <script src="figures/Point.js"></script>
+</head>
+
+<body class="body">
+    <div class="canvas-container"></div>
+
+    <div class="options-panel">
+        <div class="panel x-panel">
+            <div class="panel-item">
+                <p class="panel-item-title">x-amplitude</p>
+                <input id="x-amplitude" type="range" min="0" max="1" step="0.01" value="1">
+                <p id="x-amp-val" class="panel-value">1</p>
+            </div>
+
+            <div class="panel-item">
+                <p class="panel-item-title">x-phase</p>
+                <input id="x-phase" type="range" min="0" max="360" step="1" value="0">
+                <p id="x-phase-val" class="panel-value">0</p>
+            </div>
+
+            <div class="panel-item">
+                <p class="panel-item-title">x-freq</p>
+                <input id="x-freq" type="range" min="0.1" max="10" step="0.01" value="1">
+                <p id="x-freq-val" class="panel-value">1</p>
+            </div>
+        </div>
+
+        <div class="panel y-panel">
+            <div class="panel-item">
+                <p class="panel-item-title">y-amplitude</p>
+                <input id="y-amplitude" type="range" min="0" max="1" step="0.01" value="1">
+                <p id="y-apm-val" class="panel-value">1</p>
+            </div>
+
+            <div class="panel-item">
+                <p class="panel-item-title">y-phase</p>
+                <input id="y-phase" type="range" min="0" max="360" step="1" value="0">
+                <p id="y-phase-val" class="panel-value">0</p>
+            </div>
+
+            <div class="panel-item">
+                <p class="panel-item-title">y-freq</p>
+                <input id="y-freq" type="range" min="0.1" max="10" step="0.01" value="1">
+                <p id="y-freq-val" class="panel-value">1</p>
+            </div>
+        </div>
+
+        <div class="panel figure-panel">
+            <div class="panel-item">
+                <p class="panel-item-title">points</p>
+                <input id="points" type="range" min="1" max="1000" step="1" value="100">
+                <p id="points-val" class="panel-value">100</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

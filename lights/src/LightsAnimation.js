@@ -45,7 +45,7 @@ class LightsAnimation {
             this.ctx.clearRect(0, 0, this.cnv.width, this.cnv.height);
             this.ctx.globalCompositeOperation = "lighter";
             this.draw();
-        });
+        }, 16);
 
         cnv.addEventListener('click', (e) => {
             this.particles.push(

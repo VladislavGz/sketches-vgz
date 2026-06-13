@@ -1,3 +1,3 @@
 # text-rain
 
-demo: https://vladislavgz.ru/archive/text-rain/
+demo: https://vladislavgz.ru/sketches/text-rain/

@@ -2,7 +2,7 @@
 ## 1. About
 The "particles" code makes it easy to insert an animated background of particles and grids on the page.
 
-Here you can quickly see how it works: https://vladislavgz.ru/archive/particles-grid-animation/
+Here you can quickly see how it works: https://vladislavgz.ru/sketches/particles-grid-animation/
 
 ## 2. Get started
 To use this in a project, you need to copy the particles file.js to the project and connect to the page:

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>3D Лиссажу – Three.js</title>
+    <title>LISSAJOUS FIGURES 3D</title>
     <link rel="stylesheet" href="index.css">
 
     <script type="importmap">
@@ -24,10 +24,14 @@
 </head>
 
 <body>
-    <div class="info">
-        <strong>3D Фигуры Лиссажу</strong> | Оси: X(красный) Y(зелёный) Z(синий) | Точка и линия обновляются в реальном
-        времени
+    <div class="info" style="position: absolute; z-index: 1; padding: 20px; top: 0; left: 0;">
+        <h1 class="inf-title"
+            style="color: #eee; font-family: monospace; font-weight: 300; font-size: 22px; letter-spacing: 2px;">LISSAJOUS FIGURES 3D
+        </h1>
+        <a href="https://github.com/VladislavGz/sketches-vgz/tree/main/lissajous-figures-3d"
+            style="color: #aaa; font-family: monospace; font-size: 16px; text-decoration: none; border-bottom: 1px solid #aee; letter-spacing: 2px; padding-bottom: 2px; display: block; width: min-content; margin-top: 2px;">github</a>
     </div>
+
     <div class="controls">
         <div class="control-group">
             <span>X: A=</span><input type="range" id="ax" min="0" max="1" step="0.01" value="1"> <span

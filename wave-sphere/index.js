@@ -139,15 +139,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     let mPress = null;
-    cnvContainer.addEventListener('mousedown', (e) => {
+    cnvContainer.addEventListener('click', (e) => {
         mPress = {
             mx: e.offsetX - 0.5 * cnv.width,
             my: e.offsetY - 0.5 * cnv.height
         };
-    });
-
-    cnvContainer.addEventListener('mouseup', () => {
-        mPress = null;
     });
 
     init();
@@ -155,5 +151,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => {
         ctx.clearRect(-0.5 * cnv.width, -0.5 * cnv.height, cnv.width, cnv.height);
         draw(ctx, rotX, rotY, mPress);
+        mPress = null;
     }, 16);
 });
